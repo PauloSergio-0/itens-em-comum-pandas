@@ -11,4 +11,4 @@ fraude["TITULO_ELEITORAL"] = fraude["TITULO_ELEITORAL"].astype(str)
 fraude["TITULO_ELEITORAL"] = fraude["TITULO_ELEITORAL"].apply(lambda x: x.zfill(12))
 
 # Exibir o DataFrame corrigido
-fraude.to_csv("./Table_fraudes.csv", sep=";", encoding="utf-8")
+fraude.to_csv("./Table_fraudes.csv", sep=";", encoding="utf-8", index=False)
